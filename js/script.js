@@ -10,13 +10,19 @@ document.addEventListener('DOMContentLoaded', function() {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            renderBullet: (index, className) => `<span class="${className}">${index + 1}</span>`,
-        },
-        on: {
-            slideChange: () => {
-                const progressWidth = `${(swiper.realIndex + 1) / swiper.slides.length * 100}%`;
-                document.querySelector('.progress-bar').style.width = progressWidth;
+            dynamicBullets: true,
+            dynamicMainBullets: 6,
+            renderBullet: function(index, className) {
+                return `<span class="${className}">${index + 1}</span>`;
             },
         },
+        on: {
+            slideChange: updateProgressBar,
+        },
     });
+
+    function updateProgressBar() {
+        const progressWidth = `${(swiper.realIndex + 1) / swiper.slides.length * 100}%`;
+        document.querySelector('.progress-bar').style.width = progressWidth;
+    }
 });

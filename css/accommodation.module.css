@@ -54,9 +54,9 @@
 .accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .swiper-pagination {
   position: relative;
   text-align: left;
-  left: auto;
   bottom: auto;
   width: auto;
+  left: 13%;
 }
 .accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .swiper-pagination-bullet {
   width: 53px;
@@ -75,11 +75,12 @@
 }
 .accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress {
   display: flex;
-  width: 40%;
+  width: 50%;
   height: 2px;
   background: #D4D4D4;
   position: relative;
   opacity: 0.5;
+  right: 5%;
 }
 .accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress .progress-bar {
   height: 100%;
@@ -120,23 +121,15 @@
   font-style: normal;
 }
 .accommodation .accommodation-1-all-text h3 {
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 48px;
+  font: 300 32px/48px "Noto Serif Display", serif;
   letter-spacing: 1.92px;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 24px;
 }
 .accommodation .accommodation-1-all-text p {
+  font: 600 20px/29.2px "Nunito Sans", sans-serif;
   margin-bottom: 48px;
-  font-size: 20px;
-  font-family: "Nunito Sans";
-  color: #593932;
-  width: 100%;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 29.2px;
 }
 .accommodation .accommodation-1-all-text button {
   display: flex;
