@@ -55,7 +55,11 @@
                 z-index: 3;
 
                 .swiper-pagination{
+                    position: relative;
                     text-align: left;
+                    left: auto;
+                    bottom: auto;
+                    width: auto;
                 }
 
                 .swiper-pagination-bullet {
@@ -76,8 +80,8 @@
                   }
 
                 .accommodation-progress {
-                    flex-grow: 1;
-                    margin: 0 20px;
+                    display: flex;
+                    width: 40%;
                     height: 2px;
                     background: #D4D4D4;
                     position: relative;

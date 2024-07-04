@@ -11,22 +11,14 @@ document.addEventListener('DOMContentLoaded', function() {
             el: ".swiper-pagination",
             clickable: true,
             renderBullet: function (index, className) {
-              return '<span class="' + className + '">' + (index + 1) + "</span>";
+                return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
-          },
+        },
         on: {
-            slideChangeTransitionStart: handleSlideChange
+            slideChange: function() {
+                const progressWidth = ((swiper.activeIndex + 1) / swiper.slides.length) * 100 + '%';
+                document.querySelector('.progress-bar').style.width = progressWidth;
+            },
         },
     });
-
-    function handleSlideChange() {
-        const activeIndex = swiper.activeIndex;
-        updateProgressBar(activeIndex);
-    }
-    function updateProgressBar(activeIndex) {
-        const progressWidth = ((activeIndex + 1) / swiper.slides.length) * 100 + '%';
-        document.querySelector('.progress-bar').style.width = progressWidth;
-    }
-
-    handleSlideChange();
 });
