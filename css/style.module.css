@@ -1,0 +1,295 @@
+.accommodation {
+  padding-bottom: 338px;
+  width: 83%;
+  margin: 0 auto;
+}
+.accommodation h2 {
+  color: var(--Text-Primary, #593932);
+  text-align: center;
+  font-family: "Noto Serif Display";
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 72px */
+  text-transform: uppercase;
+  padding-top: 114px;
+}
+.accommodation .accommodation-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+}
+.accommodation .accommodation-1-all {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  height: 480px;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image {
+  width: 60%;
+  height: 540px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.2s linear;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 60px;
+  z-index: 3;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-numbers {
+  display: flex;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-numbers span {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  width: 53px;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress {
+  flex-grow: 1;
+  margin: 0 20px;
+  height: 2px;
+  background: #D4D4D4;
+  position: relative;
+  opacity: 0.5;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress .progress-bar {
+  height: 100%;
+  width: 30%;
+  background: #FFF;
+  opacity: 1;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-buttons {
+  display: flex;
+  gap: 16px;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-buttons button {
+  width: 56px;
+  height: 56px;
+  align-items: flex-start;
+  border-radius: 64px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 16px;
+  background: transparent;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 668px;
+  margin-left: auto;
+  padding: 55px 85px;
+  align-items: center;
+  height: 100%;
+  background: #F6F2EE;
+  z-index: 2;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-text h3,
+.accommodation .accommodation-1-all .accommodation-1-all-text p {
+  color: #593932;
+  font-style: normal;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-text h3 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 48px;
+  letter-spacing: 1.92px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-text p {
+  margin-bottom: 48px;
+  font-size: 20px;
+  font-family: "Nunito Sans";
+  color: #593932;
+  width: 100%;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29.2px;
+}
+.accommodation .accommodation-1-all .accommodation-1-all-text button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 8px;
+  background: #136062;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+}
+.accommodation .accommodation-icons {
+  display: flex;
+  padding-top: 50px;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.accommodation .accommodation-icons ul {
+  display: flex;
+  gap: 68px;
+  padding-left: 40px;
+}
+.accommodation .accommodation-icons ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+}
+.accommodation .accommodation-icons ul li p {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+@media screen and (max-width: 1024px) {
+  .accommodation {
+    gap: 0px;
+    padding-bottom: 200px;
+  }
+  .accommodation .accommodation-img-text {
+    gap: 40px;
+    margin-bottom: 40px;
+  }
+  .accommodation .accommodation-img-text .accommodation-img {
+    display: none;
+  }
+  .accommodation .accommodation-img-text .accommodation-img-responsive {
+    display: flex;
+    width: 100%;
+    background: lightgray 50%/cover no-repeat;
+  }
+  .accommodation .accommodation-img-text .accommodation-img-responsive img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .accommodation .accommodation-img-text .accommodation-1-text {
+    width: 95%;
+  }
+  .accommodation .accommodation-img-text .accommodation-1-text p {
+    width: 100% !important;
+  }
+  .accommodation .accommodation-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 0;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all {
+    flex-direction: column;
+    gap: 40px;
+    height: auto;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all .accommodation-1-all-image {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all .accommodation-1-all-text {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all .accommodation-1-all-text h3 {
+    width: 80%;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all .accommodation-1-all-text p {
+    width: 100% !important;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all:nth-child(odd) .accommodation-1-all-text {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    align-items: flex-start;
+  }
+  .accommodation .accommodation-1 .accommodation-1-all:nth-child(odd) .accommodation-1-all-text p {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #0B1931;
+  border-radius: 8px;
+  position: relative;
+  background-color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.section {
+  max-width: 1920px;
+  width: 93%;
+  display: flex;
+  padding-top: 150px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.specColor {
+  color: #E4B271;
+  font-weight: 600;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*# sourceMappingURL=style.module.css.map */

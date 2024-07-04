@@ -1,0 +1,269 @@
+.accommodation {
+    padding-bottom: 338px;
+    width: 83%;
+    margin: 0 auto;
+
+    h2 {
+        color: var(--Text-Primary, #593932);
+        text-align: center;
+        font-family: "Noto Serif Display";
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 72px */
+        text-transform: uppercase;
+        padding-top: 114px;
+    }
+
+    .accommodation-1 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 170px;
+    }
+
+    .accommodation-1-all {
+        display: flex;
+        position: relative;
+        flex-wrap: wrap;
+        height: 480px;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        .accommodation-1-all-image {
+            width: 60%;
+            height: 540px;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: .2s linear;
+            }
+
+            .accommodation-navigation {
+                position: absolute;
+                bottom: 20px;
+                left: 0;
+                width: 95%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 60px;
+                z-index: 3;
+
+                .accommodation-numbers {
+                    display: flex;
+
+                    span {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: white;
+                        width: 53px;
+                    }
+                }
+
+                .accommodation-progress {
+                    flex-grow: 1;
+                    margin: 0 20px;
+                    height: 2px;
+                    background: #D4D4D4;
+                    position: relative;
+                    opacity: 0.5;
+
+                    .progress-bar {
+                        height: 100%;
+                        width: 30%; 
+                        background: #FFF;
+                        opacity: 1;
+                    }
+                }
+
+                .accommodation-buttons {
+                    display: flex;
+                    gap: 16px;
+
+                    button {
+                        width: 56px;
+                        height: 56px;
+                        align-items: flex-start;
+                        border-radius: 64px;
+                        border: 1px solid white;
+                        padding: 10px 15px;
+                        cursor: pointer;
+                        font-size: 16px;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+
+        .accommodation-1-all-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 668px;
+            margin-left: auto;
+            padding: 55px 85px;
+            align-items: center;
+            height: 100%;
+            background: #F6F2EE;
+            z-index: 2;
+
+            h3,
+            p {
+                color: #593932;
+                font-style: normal;
+            }
+
+            h3 {
+                font-size: 32px;
+                font-weight: 300;
+                line-height: 48px;
+                letter-spacing: 1.92px;
+                text-transform: uppercase;
+                text-align: center;
+                margin-bottom: 24px;
+            }
+
+            p {
+                margin-bottom: 48px;
+                font-size: 20px;
+                font-family: 'Nunito Sans';
+                color: #593932;
+                width: 100%;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 29.2px;
+            }
+
+            button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 8px;
+                padding: 12px 8px;
+                background: #136062;
+                border: none;
+                text-transform: uppercase;
+                color: white;
+            }
+        }
+    }
+
+    .accommodation-icons {
+        display: flex;
+        padding-top: 50px;
+        align-items: flex-start;
+        flex-shrink: 0;
+
+        ul {
+            display: flex;
+            gap: 68px;
+            padding-left: 40px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+                flex: 1 0 0;
+
+                p {
+                    text-transform: uppercase;
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        gap: 0px;
+        padding-bottom: 200px;
+
+        .accommodation-img-text {
+            gap: 40px;
+            margin-bottom: 40px;
+
+            .accommodation-img {
+                display: none;
+            }
+
+            .accommodation-img-responsive {
+                display: flex;
+                width: 100%;
+                background: lightgray 50% / cover no-repeat;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .accommodation-1-text {
+                width: 95%;
+
+                p {
+                    width: 100% !important;
+                }
+            }
+        }
+
+        .accommodation-1 {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            padding-top: 0;
+
+            .accommodation-1-all {
+                flex-direction: column;
+                gap: 40px;
+                height: auto;
+
+                .accommodation-1-all-image {
+                    width: 100%;
+                    position: static;
+                    height: auto;
+                }
+
+                .accommodation-1-all-text {
+                    width: 95%;
+                    height: auto;
+                    margin: 0 auto;
+                    border: none;
+                    padding: 0;
+                    align-items: flex-start;
+
+                    h3 {
+                        width: 80%;
+                    }
+
+                    p {
+                        width: 100% !important;
+                    }
+                }
+
+                &:nth-child(odd) {
+                    .accommodation-1-all-text {
+                        width: 95%;
+                        height: auto;
+                        margin: 0 auto;
+                        border: none;
+                        padding: 0;
+                        align-items: flex-start;
+
+                        p {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

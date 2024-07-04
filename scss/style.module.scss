@@ -1,0 +1,73 @@
+// Variables
+$primary-color: #E4B271;
+$secondary-color: #0B1931;
+$count-color: #68C5F9;
+$info-text-width: 70%;
+$info-text-line-height: 27.2px;
+$info-text-font-size: 16px;
+$info-text-color: #000;
+$advantages-text-width: 75%;
+$advantages-content-gap: 58px;
+
+@import './accommodation.module.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+    font-style: normal;
+}
+
+body, html{
+    overflow-x: hidden;
+}
+
+body {
+    background-color: $secondary-color;
+    border-radius: 8px;
+    position: relative;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.section {
+    max-width: 1920px;
+    width: 93%;
+    display: flex;
+    padding-top: 150px;
+    margin: 0 auto;
+    background-color: #fff
+}
+
+
+.specColor {
+    color: $primary-color;
+    font-weight: 600;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 14px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
