@@ -7,17 +7,26 @@ document.addEventListener('DOMContentLoaded', function() {
             nextEl: '.right-button',
             prevEl: '.left-button'
         },
-        on: {
-            slideChangeTransitionStart: function () {
-                updateProgressBar(this.activeIndex);
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
+          },
+        on: {
+            slideChangeTransitionStart: handleSlideChange
         },
     });
 
+    function handleSlideChange() {
+        const activeIndex = swiper.activeIndex;
+        updateProgressBar(activeIndex);
+    }
     function updateProgressBar(activeIndex) {
         const progressWidth = ((activeIndex + 1) / swiper.slides.length) * 100 + '%';
         document.querySelector('.progress-bar').style.width = progressWidth;
     }
 
-    updateProgressBar(swiper.activeIndex);
+    handleSlideChange();
 });

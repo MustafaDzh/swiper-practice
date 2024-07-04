@@ -6,11 +6,8 @@
     h2 {
         color: var(--Text-Primary, #593932);
         text-align: center;
-        font-family: "Noto Serif Display";
-        font-size: 72px;
+        font: 400 72px/100% "Noto Serif Display", serif;
         font-style: normal;
-        font-weight: 400;
-        line-height: 100%; /* 72px */
         text-transform: uppercase;
         padding-top: 114px;
     }
@@ -19,9 +16,9 @@
         display: flex;
         flex-direction: column;
         padding-top: 170px;
-    }
+    
 
-    .accommodation-1-all {
+    &-all {
         display: flex;
         position: relative;
         flex-wrap: wrap;
@@ -57,16 +54,26 @@
                 padding: 10px 60px;
                 z-index: 3;
 
-                .accommodation-numbers {
-                    display: flex;
-
-                    span {
-                        font-size: 16px;
-                        font-weight: 600;
-                        color: white;
-                        width: 53px;
-                    }
+                .swiper-pagination{
+                    text-align: left;
                 }
+
+                .swiper-pagination-bullet {
+                    width: 53px;
+                    height: 20px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #fff;
+                    opacity: 0.7;
+                    background: transparent;
+                    margin: 0;
+                  }
+              
+                  .swiper-pagination-bullet-active {
+                    opacity: 1;
+                  }
 
                 .accommodation-progress {
                     flex-grow: 1;
@@ -103,7 +110,7 @@
             }
         }
 
-        .accommodation-1-all-text {
+        &-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -155,6 +162,7 @@
             }
         }
     }
+}
 
     .accommodation-icons {
         display: flex;
@@ -181,89 +189,7 @@
             }
         }
     }
-
-    @media screen and (max-width: 1024px) {
-        gap: 0px;
-        padding-bottom: 200px;
-
-        .accommodation-img-text {
-            gap: 40px;
-            margin-bottom: 40px;
-
-            .accommodation-img {
-                display: none;
-            }
-
-            .accommodation-img-responsive {
-                display: flex;
-                width: 100%;
-                background: lightgray 50% / cover no-repeat;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-
-            .accommodation-1-text {
-                width: 95%;
-
-                p {
-                    width: 100% !important;
-                }
-            }
-        }
-
-        .accommodation-1 {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
-            padding-top: 0;
-
-            .accommodation-1-all {
-                flex-direction: column;
-                gap: 40px;
-                height: auto;
-
-                .accommodation-1-all-image {
-                    width: 100%;
-                    position: static;
-                    height: auto;
-                }
-
-                .accommodation-1-all-text {
-                    width: 95%;
-                    height: auto;
-                    margin: 0 auto;
-                    border: none;
-                    padding: 0;
-                    align-items: flex-start;
-
-                    h3 {
-                        width: 80%;
-                    }
-
-                    p {
-                        width: 100% !important;
-                    }
-                }
-
-                &:nth-child(odd) {
-                    .accommodation-1-all-text {
-                        width: 95%;
-                        height: auto;
-                        margin: 0 auto;
-                        border: none;
-                        padding: 0;
-                        align-items: flex-start;
-
-                        p {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-        }
+    .swiper-button-disabled {
+        opacity: 0.5;
     }
 }
