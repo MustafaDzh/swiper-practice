@@ -176,7 +176,8 @@
   font-style: normal;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
