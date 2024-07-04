@@ -16,150 +16,150 @@
         display: flex;
         flex-direction: column;
         padding-top: 170px;
-    
 
-    &-all {
-        display: flex;
-        position: relative;
-        flex-wrap: wrap;
-        height: 480px;
-        justify-content: flex-end;
-        align-items: center;
-        width: 100%;
 
-        .accommodation-1-all-image {
-            width: 60%;
-            height: 540px;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            overflow: hidden;
+        &-all {
+            display: flex;
+            position: relative;
+            flex-wrap: wrap;
+            height: 480px;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
 
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                transition: .2s linear;
-            }
-
-            .accommodation-navigation {
+            .accommodation-1-all-image {
+                width: 60%;
+                height: 540px;
                 position: absolute;
-                bottom: 20px;
                 left: 0;
-                width: 95%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 10px 60px;
-                z-index: 3;
+                top: 50%;
+                transform: translateY(-50%);
+                overflow: hidden;
 
-                .swiper-pagination{
-                    position: relative;
-                    text-align: left;
-                    bottom: auto;
-                    width: auto;
-                    left: 13%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .2s linear;
                 }
 
-                .swiper-pagination-bullet {
-                    width: 53px;
-                    height: 20px;
-                    text-align: center;
-                    line-height: 20px;
-                    font-size: 14px;
-                    font-weight: 600;
-                    color: #fff;
-                    opacity: 0.7;
-                    background: transparent;
-                    margin: 0;
-                  }
-              
-                  .swiper-pagination-bullet-active {
-                    opacity: 1;
-                  }
-
-                .accommodation-progress {
+                .accommodation-navigation {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 0;
+                    width: 95%;
                     display: flex;
-                    width: 50%;
-                    height: 2px;
-                    background: #D4D4D4;
-                    position: relative;
-                    opacity: 0.5;
-                    right: 5%;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 10px 60px;
+                    z-index: 3;
 
-                    .progress-bar {
-                        height: 100%;
-                        width: 30%; 
-                        background: #FFF;
+                    .swiper-pagination {
+                        position: relative;
+                        text-align: left;
+                        bottom: auto;
+                        width: auto;
+                        left: 13%;
+                    }
+
+                    .swiper-pagination-bullet {
+                        width: 53px;
+                        height: 20px;
+                        text-align: center;
+                        line-height: 20px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        color: #fff;
+                        opacity: 0.7;
+                        background: transparent;
+                        margin: 0;
+                    }
+
+                    .swiper-pagination-bullet-active {
                         opacity: 1;
                     }
-                }
 
-                .accommodation-buttons {
-                    display: flex;
-                    gap: 16px;
+                    .accommodation-progress {
+                        display: flex;
+                        width: 50%;
+                        height: 2px;
+                        background: #D4D4D4;
+                        position: relative;
+                        opacity: 0.5;
+                        right: 5%;
 
-                    button {
-                        width: 56px;
-                        height: 56px;
-                        align-items: flex-start;
-                        border-radius: 64px;
-                        border: 1px solid white;
-                        padding: 10px 15px;
-                        cursor: pointer;
-                        font-size: 16px;
-                        background: transparent;
+                        .progress-bar {
+                            height: 100%;
+                            width: 30%;
+                            background: #FFF;
+                            opacity: 1;
+                        }
+                    }
+
+                    .accommodation-buttons {
+                        display: flex;
+                        gap: 16px;
+
+                        button {
+                            width: 56px;
+                            height: 56px;
+                            align-items: flex-start;
+                            border-radius: 64px;
+                            border: 1px solid white;
+                            padding: 10px 15px;
+                            cursor: pointer;
+                            font-size: 16px;
+                            background: transparent;
+                        }
                     }
                 }
             }
-        }
 
-        &-text {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 668px;
-            margin-left: auto;
-            padding: 55px 85px;
-            align-items: center;
-            height: 100%;
-            background: #F6F2EE;
-            z-index: 2;
-
-            h3,
-            p {
-                color: #593932;
-                font-style: normal;
-            }
-            
-            h3 {
-                font: 300 32px/48px "Noto Serif Display", serif;
-                letter-spacing: 1.92px;
-                text-transform: uppercase;
-                text-align: center;
-                margin-bottom: 24px;
-            }
-            
-            p {
-                font: 600 20px/29.2px 'Nunito Sans', sans-serif;
-                margin-bottom: 48px;
-            }
-
-            button {
+            &-text {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
+                width: 668px;
+                margin-left: auto;
+                padding: 55px 85px;
                 align-items: center;
-                gap: 8px;
-                padding: 12px 8px;
-                background: #136062;
-                border: none;
-                text-transform: uppercase;
-                color: white;
+                height: 100%;
+                background: #F6F2EE;
+                z-index: 2;
+
+                h3,
+                p {
+                    color: #593932;
+                    font-style: normal;
+                }
+
+                h3 {
+                    font: 300 32px/48px "Noto Serif Display", serif;
+                    letter-spacing: 1.92px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin-bottom: 24px;
+                }
+
+                p {
+                    font: 600 20px/29.2px 'Nunito Sans', sans-serif;
+                    margin-bottom: 48px;
+                }
+
+                button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 12px 8px;
+                    background: #136062;
+                    border: none;
+                    text-transform: uppercase;
+                    color: white;
+                }
             }
         }
     }
-}
 
     .accommodation-icons {
         display: flex;
@@ -186,6 +186,7 @@
             }
         }
     }
+
     .swiper-button-disabled {
         opacity: 0.5;
     }

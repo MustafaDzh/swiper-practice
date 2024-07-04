@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const swiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: false,
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
             clickable: true,
             dynamicBullets: true,
             dynamicMainBullets: 6,
-            renderBullet: function(index, className) {
+            renderBullet: function (index, className) {
                 return `<span class="${className}">${index + 1}</span>`;
             },
         },
