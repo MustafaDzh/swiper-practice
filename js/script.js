@@ -8,17 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
             prevEl: '.left-button'
         },
         on: {
-            slideChange: function () {
-                const numbers = document.querySelectorAll('.accommodation-number');
-                const activeIndex = this.activeIndex; 
-                numbers.forEach(number => {
-                    const slideIndex = parseInt(number.getAttribute('data-slide-index'));
-                    number.style.opacity = slideIndex === activeIndex ? '1.0' : '0.7';
-                });
+            slideChangeTransitionStart: function () {
+                updateProgressBar(this.activeIndex);
             },
         },
     });
 
-    const numbers = document.querySelectorAll('.accommodation-number');
-    numbers[0].style.opacity = '1.0';
+    function updateProgressBar(activeIndex) {
+        const progressWidth = ((activeIndex + 1) / swiper.slides.length) * 100 + '%';
+        document.querySelector('.progress-bar').style.width = progressWidth;
+    }
+
+    updateProgressBar(swiper.activeIndex);
 });
