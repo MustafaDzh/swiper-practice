@@ -10,13 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-            renderBullet: function (index, className) {
-                return '<span class="' + className + '">' + (index + 1) + "</span>";
-            },
+            renderBullet: (index, className) => `<span class="${className}">${index + 1}</span>`,
         },
         on: {
-            slideChange: function() {
-                const progressWidth = ((swiper.activeIndex + 1) / swiper.slides.length) * 100 + '%';
+            slideChange: () => {
+                const progressWidth = `${(swiper.realIndex + 1) / swiper.slides.length * 100}%`;
                 document.querySelector('.progress-bar').style.width = progressWidth;
             },
         },
