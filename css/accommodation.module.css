@@ -82,7 +82,7 @@
   opacity: 0.5;
   right: 5%;
 }
-.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress .progress-bar {
+.accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress .progress-bar, .accommodation .accommodation-1-all .accommodation-1-all-image .accommodation-navigation .accommodation-progress .progress-bar-1 {
   height: 100%;
   width: 30%;
   background: #FFF;
